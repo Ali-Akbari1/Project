@@ -36,12 +36,12 @@ public class BreakAPlate {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		ImageIcon plates = new ImageIcon("C:\\Users\\904086002\\Desktop\\CS30\\Chapter10\\src\\plates.gif");
-		ImageIcon placeholder = new ImageIcon("C:\\Users\\904086002\\Desktop\\CS30\\Chapter10\\src\\placeholder.gif");
-		ImageIcon plates_all_broken = new ImageIcon("C:\\Users\\904086002\\Desktop\\CS30\\Chapter10\\src\\plates_all_broken.gif");
-		ImageIcon plates_two_broken = new ImageIcon("C:\\Users\\904086002\\Desktop\\CS30\\Chapter10\\src\\plates_two_broken.gif");
-		ImageIcon sticker = new ImageIcon("C:\\Users\\904086002\\Desktop\\CS30\\Chapter10\\src\\sticker.gif");
-		ImageIcon tiger_plush = new ImageIcon("C:\\Users\\904086002\\Desktop\\CS30\\Chapter10\\src\\tiger_plush.gif");
+		ImageIcon plates = new ImageIcon("..\\Chapter10\\src\\plates.gif");
+		ImageIcon placeholder = new ImageIcon("..\\Chapter10\\src\\placeholder.gif");
+		ImageIcon plates_all_broken = new ImageIcon("..\\Chapter10\\src\\plates_all_broken.gif");
+		ImageIcon plates_two_broken = new ImageIcon("..\\Chapter10\\src\\plates_two_broken.gif");
+		ImageIcon sticker = new ImageIcon("..\\Chapter10\\src\\sticker.gif");
+		ImageIcon tiger_plush = new ImageIcon("..\\Chapter10\\src\\tiger_plush.gif");
 		
 		
 		frame = new JFrame();

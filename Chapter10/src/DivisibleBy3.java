@@ -75,7 +75,7 @@ public class DivisibleBy3 {
 				
 				
 				
-				if (i % 9 >= 1)
+				if (i % 3 >= 1)
 				{
 					disp.setText("Number is not divisible by 3");
 				}

@@ -11,11 +11,11 @@ static int weight = 0;
 
 static boolean getWeight() 
 {
-	if (weight >= 5 || weight<= 5.5) 
+	if (weight >= 5 && weight<= 5.5) 
 	{
 		standard = true;
 		}
-	if (weight >= 4 || weight<= 4.5) 
+	if (weight >= 4 && weight<= 4.5) 
 	{
 		standard = false;
 		}
@@ -26,6 +26,8 @@ static boolean getWeight()
 static void getDivision()
 {
 	}
+
+
 
 
 	private JFrame frame;
@@ -53,6 +55,16 @@ static void getDivision()
 	 */
 	public Puck() {
 		initialize();
+		if (standard == true)
+		{
+			System.out.print("Standard");
+			
+		}
+		
+		else if (standard == false)
+		{
+			System.out.print("Youth");
+		}
 		
 	}
 
@@ -63,6 +75,8 @@ static void getDivision()
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		
 	}
 
 }

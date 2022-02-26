@@ -28,7 +28,7 @@ static void getDivision()
 	}
 
 
-
+//mainw
 
 	private JFrame frame;
 

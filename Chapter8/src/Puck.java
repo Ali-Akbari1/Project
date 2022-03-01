@@ -2,14 +2,14 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class Puck extends Disk{
+public class Puck {
 	
 	
-static boolean standard = true;
-static boolean youth = true;
-static int weight = 0;
+static boolean standard;
+static boolean youth;
+static double weight;
 
-static boolean getWeight() 
+public static boolean getWeight() 
 {
 	if (weight >= 5 && weight<= 5.5) 
 	{
@@ -23,11 +23,19 @@ static boolean getWeight()
 	
 	}
 
-static void getDivision()
+public static String getDivision()
 {
+	String div;
+	if (standard)
+	{
+		div = "Puck is Standard";
 	}
-
-
+	else 
+	{
+		div = "Puck is Youth";
+	}
+	return div;
+	}
 
 
 	private JFrame frame;
@@ -46,6 +54,9 @@ static void getDivision()
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+				
+				
+
 			}
 		});
 	}
@@ -55,17 +66,6 @@ static void getDivision()
 	 */
 	public Puck() {
 		initialize();
-		if (standard == true)
-		{
-			System.out.print("Standard");
-			
-		}
-		
-		else if (standard == false)
-		{
-			System.out.print("Youth");
-		}
-		
 	}
 
 	/**

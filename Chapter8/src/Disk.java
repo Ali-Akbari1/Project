@@ -1,4 +1,4 @@
 
-public class Disk {
+public class Disk extends Puck{
 
 }

@@ -37,7 +37,6 @@ public static String getDivision()
 	return div;
 	}
 
-
 	private JFrame frame;
 
 	/**

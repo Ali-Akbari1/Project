@@ -22,6 +22,7 @@ public class Associate extends Employee
 		{
 			payEarned = hours * hourlyPayRate;
 		}
+		//test
 		return payEarned;
 	}
 	public String toString()

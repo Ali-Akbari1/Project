@@ -49,12 +49,12 @@ public class Hockey extends Puck {
 		panel.setLayout(null);
 		
 		textField = new JTextField();
-		textField.setBounds(115, 85, 86, 20);
+		textField.setBounds(159, 85, 98, 35);
 		panel.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblNewLabel = new JLabel("Enter a Number From 4-5.5 Ounces");
-		lblNewLabel.setBounds(57, 39, 182, 35);
+		lblNewLabel.setBounds(115, 39, 182, 35);
 		panel.add(lblNewLabel);
 	}
 }

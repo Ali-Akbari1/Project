@@ -4,7 +4,6 @@ import java.awt.event.*;
 import java.util.Random;
 import javax.swing.*;
 
-// main class
 public class BreakAPlate {
 
 	private JFrame frame;

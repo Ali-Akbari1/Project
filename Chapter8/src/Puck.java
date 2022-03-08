@@ -7,11 +7,11 @@ public class Puck {
 	
 static boolean standard;
 static boolean youth;
-static double weight;
+static double weight = 5;
 
 public static boolean getWeight() 
 {
-	if (weight >= 5 && weight<= 5.5) 
+	if (weight >= 5 && weight <= 5.5) 
 	{
 		standard = true;
 		}
@@ -20,7 +20,6 @@ public static boolean getWeight()
 		standard = false;
 		}
 	return standard;
-	
 	}
 
 public static String getDivision()
@@ -30,12 +29,13 @@ public static String getDivision()
 	{
 		div = "Puck is Standard";
 	}
-	else 
+	else
 	{
 		div = "Puck is Youth";
 	}
 	return div;
 	}
+
 
 	private JFrame frame;
 

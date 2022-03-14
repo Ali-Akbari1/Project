@@ -1,7 +1,9 @@
-public class Disk extends Puck{
+public class Disk {
 
 
 public static void main(String[] args) {
+	
+	
 
 	}
 }

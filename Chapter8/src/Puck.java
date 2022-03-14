@@ -2,80 +2,67 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class Puck {
+public class Puck extends Disk{
 	
-	
-static boolean standard;
-static boolean youth;
-static double weight = 5;
-
-public static boolean getWeight() 
-{
-	if (weight >= 5 && weight <= 5.5) 
-	{
-		standard = true;
-		}
-	if (weight >= 4 && weight<= 4.5) 
-	{
-		standard = false;
-		}
-	return standard;
-	}
-
-public static String getDivision()
-{
-	String div;
-	if (standard)
-	{
-		div = "Puck is Standard";
-	}
-	else
-	{
-		div = "Puck is Youth";
-	}
-	return div;
-	}
-
-
-	private JFrame frame;
+	private double weight;
+	private boolean standard,youth;
 
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				getWeight();
-				getDivision();
-				try {
-					Puck window = new Puck();
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-				
-				
-
-			}
-		});
-	}
 
 	/**
 	 * Create the application.
 	 */
-	public Puck() {
-		initialize();
-	}
-
-	/**
-	 * Initialize the contents of the frame.
-	 */
-	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+	public Puck(double w) {
+	
+		weight = w;
+		
+		if (weight >= 5 && weight <= 5.5) 
+		{
+			standard = true;
+			}
+		if (weight >= 4 && weight<= 4.5) 
+		{ 
+			standard = false;
+			}
+		}
+	
+	public double getWeight() 
+	{
+		return (weight);
+		}	
+	
+	public String getDivision()
+	{
+		String div;
+		if (standard)
+		{
+			div = "Puck is Standard";
+		}
+		else
+		{
+			div = "Puck is Youth";
+		}
+		return div;
 		
 	}
 
-}
+		public String toString()
+		{
+			String puck;
+			
+			puck = "The Puck has a weight of " + getWeight() + " ounces, and the division of the "+ getDivision();
+			return(puck);
+		}
+//check circle class
+		 public boolean equals(Object obj) {
+			 Puck testObj = (Puck)obj;
+			 
+			 if(testObj.getDivision() == getDivision()) {
+			 return(true);
+			 } else {
+			 return(false);
+			 }
+			 }
+	}

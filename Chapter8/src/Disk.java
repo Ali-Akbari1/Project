@@ -1,9 +1,7 @@
-public class Disk {
+public class Disk{
 
-
-public static void main(String[] args) {
+public static void main(String[] args) 
+{
 	
-	
-
 	}
 }

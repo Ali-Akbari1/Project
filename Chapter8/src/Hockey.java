@@ -10,10 +10,10 @@ public class Hockey extends Puck{
 	public static void main(String[] args) 
 	{
 		Scanner input = new Scanner(System.in);
-		System.out.println("Enter a weight between 4 and 5 ounces"); 
+		System.out.println("Enter a weight between 4 and 5.5 ounces for puck number 1"); 
 		double userInput = input.nextDouble();
 		Scanner input2 = new Scanner(System.in);
-		System.out.println("Enter a weight between 4 and 5 ounces"); 
+		System.out.println("Enter a weight between 4 and 5.5 ounces for puck number 2"); 
 		double userInput2 = input2.nextDouble();
 		 Puck p1 = new Puck(userInput);
 		 Puck p2 = new Puck(userInput2);
@@ -21,20 +21,20 @@ public class Hockey extends Puck{
 		 System.out.println(p1.toString());
 		 System.out.println(p2.toString());
 		 
-		 if (p1.equals(p2)) 
+		 if (p1.equals(p2) == true) 
 		 {
-			 System.out.println("Objects weight are equal."); 
+			 System.out.println("Puck weights are equal."); 
 		 }
 		 else 
 		 {
-			 System.out.println("Objects weight are not equal."); 
+			 System.out.println("Puck weights are not equal."); 
 		 }
 		 
 		Scanner inp = new Scanner(System.in);
-		System.out.println("Enter a weight between 4 and 5 ounces for spot object 1"); 
+		System.out.println("Enter a weight between 4 and 5.5 ounces for Spot object 1"); 
 		double userInp = inp.nextDouble();
 		Scanner inp2 = new Scanner(System.in);
-		System.out.println("Enter a weight between 4 and 5 ounces for spot object 2"); 
+		System.out.println("Enter a weight between 4 and 5.5 ounces for Spot object 2"); 
 		double userInp2 = inp2.nextDouble();
 		 
 		 Puck spot1 = new Puck(userInp);

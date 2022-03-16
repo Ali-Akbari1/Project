@@ -70,7 +70,7 @@ public class Puck extends Disk implements Comparable{
 		 public boolean equals(Object p) 
 		 {
 			 Puck testObj = (Puck)p;	 
-			 if(testObj.getDivision() == getDivision()) 
+			 if(testObj.getWeight() == weight) 
 			 {
 			 return(true);
 			 } else 

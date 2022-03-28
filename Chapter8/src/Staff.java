@@ -2,9 +2,11 @@
 public class Staff extends UEmployee {
 	
 	private double yearlySalary;
+	private String jobtitle;
 
-	public Staff(String fn, String ln, double salary) {
+	public Staff(String fn, String ln, String j, double salary) {
 		super(fn, ln);
+		jobtitle = j;
 
 	}
 	
@@ -17,7 +19,7 @@ public class Staff extends UEmployee {
 
 	public String toString()
 	{
-		return(super.toString() + ", manager"
+		return(super.toString() + ", Staff" + "Job Title: " + jobtitle
 				+ "Salary: " + yearlySalary);
 	}
 

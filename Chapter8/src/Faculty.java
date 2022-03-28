@@ -29,8 +29,8 @@ public class Faculty extends UEmployee {
 	
 	public String toString()
 	{
-	return(super.toString()+ ", Associate"
-			+ "Salary: " + hourlyPayRate);//prints Employee Object 
+	return(super.toString()+ ", Faculty" + "Department: " + dept
+			+ "Salary: " + hourlyPayRate);
 	}
 }
 

@@ -4,7 +4,6 @@ public abstract class UEmployee {
 	
 	private String firstName;
 	private String lastName;
-	private double salary;
 	
 
 

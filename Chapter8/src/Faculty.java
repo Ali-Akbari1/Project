@@ -1,7 +1,7 @@
 
 public class Faculty extends UEmployee {
 	
-	//getdept and setdept and a tostring for both faculty and staff 
+	
 	private String dept;
 	private double hourlyPayRate;
 

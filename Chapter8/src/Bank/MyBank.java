@@ -1,3 +1,7 @@
+
+package Bank;
+
+
 import java.util.Scanner;
 
 public class MyBank extends Account

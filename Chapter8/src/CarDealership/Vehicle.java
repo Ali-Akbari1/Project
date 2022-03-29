@@ -1,7 +1,10 @@
 /**
  * Vehicle class.
  */
-abstract class Vehicle {
+
+package CarDealership;
+
+public abstract class Vehicle {
 	private int fuelEconomyCity, fuelEconomyHwy;
 	private int seatingCapacity;
 	private double cargoVolume;

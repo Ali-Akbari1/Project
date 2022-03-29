@@ -1,3 +1,4 @@
+package School;
 
 public abstract class UEmployee {
 

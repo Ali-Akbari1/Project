@@ -1,3 +1,4 @@
+package School;
 
 public class Staff extends UEmployee {
 	

@@ -1,3 +1,4 @@
+package CarDealership;
 
 public class Minivan extends Vehicle{
 

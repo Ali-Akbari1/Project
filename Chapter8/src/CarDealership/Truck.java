@@ -1,3 +1,4 @@
+package CarDealership;
 
 public class Truck extends Vehicle{
 

@@ -13,6 +13,7 @@ Course: Computer Science 30
 
 */
 
+package Pucks;
 
 import java.awt.EventQueue;
 

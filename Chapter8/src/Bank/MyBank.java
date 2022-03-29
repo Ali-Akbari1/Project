@@ -23,6 +23,7 @@ public class MyBank extends Account
 		System.out.println("What is the balance of your Personal Account?"); 
 		double balance = input.nextDouble();
 		
+		
 		Scanner fname = new Scanner(System.in);
 		System.out.println("What is Your First Name?"); 
 		String fnam = fname.nextLine();
@@ -49,6 +50,17 @@ public class MyBank extends Account
 		
 		Account pct = new PersonalAcct(balance, fnam, lnam, null, ct, street, zp);
 		
+		
+		
+		if (balance < 100) 
+		{
+			
+			balance = balance - 2; 
+			
+			System.out.println("Balance is under 100 Dollars 2 Dollars Must Be Charged to the Account");
+			
+		}
+		
 		System.out.println("Account Holder: " + fnam + " " +  lnam + " The Balance of the Personal Account is: " + balance
 				+ " The Account Holder lives in: " + ct + " " +  street + " " + zp); 
 		
@@ -57,6 +69,7 @@ public class MyBank extends Account
 		Scanner input1 = new Scanner(System.in);
 		System.out.println("What is the balance of your Business Account?"); 
 		double balance1 = input.nextDouble();
+		
 		
 		Scanner fname1 = new Scanner(System.in);
 		System.out.println("What is Your First Name?"); 
@@ -84,7 +97,18 @@ public class MyBank extends Account
 		
 		Account bct = new BusinessAcct(balance1, fnam1, lnam1, null, ct1, street1, zp1);
 		
-		System.out.println("Account Holder: " + fnam1 + " " +  lnam1 + " The Balance of the Business Account is: " + balance1
+		
+		if (balance1 < 500) 
+		{
+			
+			balance1 = balance1 - 10; 
+			
+			System.out.println("Balance is under 500 Dollars 10 Dollars Must Be Charged to the Account");
+			
+			
+		}
+		
+		System.out.println("Account Holder: " + fnam1 + " " +  lnam1 + " The Balance of the Business Account is: " + balance1 
 				+ " The Account Holder lives in: " + ct1 + " " +  street1 + " " + zp1); 
 		
 		

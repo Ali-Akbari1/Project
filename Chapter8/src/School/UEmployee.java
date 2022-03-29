@@ -22,12 +22,6 @@ public String toString()//prints UEmployee Object
 
 abstract double pay(double period);
 
-public static void main(String[] args) 
-
-{
-	
-}
-
 
 }
 

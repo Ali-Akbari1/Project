@@ -6,34 +6,21 @@ public class Faculty extends UEmployee {
 	
 	
 	private String dept;
-	private double hourlyPayRate;
 
-	public Faculty(String fn, String ln, String d, double rate) {
-		super(fn, ln);
+	public Faculty(String fn, String ln, String d, double s) {
+		super(fn, ln,s);
 		dept = d;
-		hourlyPayRate = rate;
 	}
 	
-	public double pay(double hours)
+	
+	String getDept() 
 	{
-		double payEarned;
-		
-		if (hours > 40)
-		{
-			payEarned = (hourlyPayRate*40)+ (hourlyPayRate* 1.5) *(hours -40);
-		}
-		else 
-		{
-			payEarned = hours * hourlyPayRate;
-		}
-		return payEarned;
-
+		return dept;
 	}
 	
 	public String toString()
 	{
-	return(super.toString()+ ", Faculty" + "Department: " + dept
-			+ "Salary: " + hourlyPayRate);
+	return(super.toString()+ " Faculty Department: " + getDept());
 	}
 }
 

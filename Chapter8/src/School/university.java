@@ -12,15 +12,15 @@ public class university
 		do { 
 			
 		Scanner first = new Scanner(System.in);
-		System.out.println("What is Your First Name"); 
+		System.out.println("What is Your First Name?"); 
 		String fn = first.nextLine();
 		
 		Scanner last = new Scanner(System.in);
-		System.out.println("What is Your Last Name"); 
+		System.out.println("What is Your Last Name?"); 
 		String ln = last.nextLine();
 		
 		Scanner sal = new Scanner(System.in);
-		System.out.println("What is your Salary"); 
+		System.out.println("What is your Salary?"); 
 		double s = sal.nextDouble();
 		
 		Scanner input = new Scanner(System.in);
@@ -33,7 +33,7 @@ public class university
 		
 		
 		Scanner dept = new Scanner(System.in);
-		System.out.println("What Department Do You Work in"); 
+		System.out.println("What Department Do You Work in?"); 
 		String d = dept.nextLine();
 		
 		
@@ -47,7 +47,7 @@ public class university
 		if (action.equalsIgnoreCase("S") || (action.equalsIgnoreCase("Staff")))  {
 		
 		Scanner jobtitle = new Scanner(System.in);
-		System.out.println("What is Your Job Title"); 
+		System.out.println("What is Your Job Title?"); 
 		String jt = jobtitle.nextLine();
 		
 		

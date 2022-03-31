@@ -7,4 +7,16 @@ public class Minivan extends Vehicle{
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	String cargoContainer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	String description() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

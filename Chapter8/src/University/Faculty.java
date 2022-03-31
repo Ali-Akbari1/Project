@@ -1,6 +1,6 @@
 
 
-package School;
+package University;
 
 public class Faculty extends UEmployee {
 	

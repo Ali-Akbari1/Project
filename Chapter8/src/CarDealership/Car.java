@@ -7,4 +7,5 @@ public class Car extends Vehicle {
 		// TODO Auto-generated constructor stub
 	}
 
+
 }

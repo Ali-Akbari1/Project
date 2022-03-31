@@ -1,8 +1,8 @@
-package School;
+package University;
 
 import java.util.Scanner;
 
-public class university 
+public class MyUniversity 
 {
 
 	public static void main(String[] args) 

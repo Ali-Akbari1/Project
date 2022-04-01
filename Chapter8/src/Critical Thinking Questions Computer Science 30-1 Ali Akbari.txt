@@ -25,7 +25,7 @@ b) Wo is an interface.
 c) Wo is an interface, thus to use its methods you have to implement Wo. 
 
 
-d) doThat(), doThis(), doNow(), 
+d) doThat(), doThis(), doNow().
 
 
 e) doThis() will now return 10 because Roo overrides Bo. 
@@ -34,7 +34,7 @@ e) doThis() will now return 10 because Roo overrides Bo.
 f) Makes z = 1 in Bo. 
 
 
-g) doThis() method in Bo can be called by using super.doThis()
+g) doThis() method in Bo can be called using super.doThis()
 
 
-h) A method in Roo can call doThis() method by using super.doThis()
+h) A method in Roo can call doThis() method using super.doThis()
